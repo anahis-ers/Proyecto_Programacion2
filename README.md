@@ -21,24 +21,24 @@ Para la instalación del software se deben seguir los siguientes pasos.
 
 1. Tenemos la visualización del programa en la pantalla.
 
-   ![Ima1_opt (3)](https://user-images.githubusercontent.com/62104463/81245215-0eabbd00-8fda-11ea-9108-aef2f1284514.png)
+   ![Ima1](https://user-images.githubusercontent.com/62104463/81245215-0eabbd00-8fda-11ea-9108-aef2f1284514.png)
  
 2. Damos clic en ***`Clone or download`*** y seleccionamos la opción ***`Download ZIP`*** para poder descargar el software.
 
-   ![pro1_opt (9)](https://user-images.githubusercontent.com/62104463/81244963-5ed64f80-8fd9-11ea-92ba-527fb403e604.png)  ![pro2_opt (5)](https://user-images.githubusercontent.com/62104463/81245501-c50fa200-8fda-11ea-8326-578b82172c6b.png)
+   ![Ima2](https://user-images.githubusercontent.com/62104463/81244963-5ed64f80-8fd9-11ea-92ba-527fb403e604.png)  ![Imag3](https://user-images.githubusercontent.com/62104463/81245501-c50fa200-8fda-11ea-8326-578b82172c6b.png)
 
 3. Al descargarlo, nos dirigimos al lugar donde quedó descargado el software y descomprimimos el archivo. Al tener ya descomprimido el archivo, abrimos la carpeta y descomprimimos también los dos archivos que aparecen comprimidos.
 
-   ![pro3_opt (2)](https://user-images.githubusercontent.com/62104463/81246022-2126f600-8fdc-11ea-9fd0-c185e22c5c34.png) ![pro2_opt (6)](https://user-images.githubusercontent.com/62104463/81245843-acec5280-8fdb-11ea-90c4-71ec460df3dd.png)
+   ![Ima4](https://user-images.githubusercontent.com/62104463/81246022-2126f600-8fdc-11ea-9fd0-c185e22c5c34.png) ![Ima5](https://user-images.githubusercontent.com/62104463/81245843-acec5280-8fdb-11ea-90c4-71ec460df3dd.png)
 
 4. Por último, abrimos el archivo que dice **ProyectoCorte1** .
 
-   ![pro5_opt](https://user-images.githubusercontent.com/62104463/81246486-60a21200-8fdd-11ea-8a9f-9367f035fb2d.png)
+   ![Ima6](https://user-images.githubusercontent.com/62104463/81246486-60a21200-8fdd-11ea-8a9f-9367f035fb2d.png)
 
    ```
    Aquí una explicación detallada: https://youtu.be/3I9m5sT4Q6Y
    ```
-   [![Instalar](https://img.youtube.com/vi/3I9m5sT4Q6Y/0.jpg)](https://youtu.be/3I9m5sT4Q6Y)
+   [![VideoInstalar](https://img.youtube.com/vi/3I9m5sT4Q6Y/0.jpg)](https://youtu.be/3I9m5sT4Q6Y)
    
 #### Herramientas utilizadas.
  Las herramientas que se utilizaron en el proyecto se explicarán acontinuación:
@@ -47,15 +47,15 @@ Para la instalación del software se deben seguir los siguientes pasos.
  
  Primero, asignamos a cada label su respectivo textBox o comboBox, esto para saber que datos y tipo de datos debemos ingresar en cada uno. 
  
- ![pro7](https://user-images.githubusercontent.com/62104463/81249607-aa422b00-8fe4-11ea-965e-415cee8f8b25.png)
+ ![Ima7](https://user-images.githubusercontent.com/62104463/81249607-aa422b00-8fe4-11ea-965e-415cee8f8b25.png)
  
  Segundo, agrupamos las diferentes herramientas en su respectivo groupBox, el título de los groupBox se encuentra centrado por lo que para que quede de esa forma nos basamos del código encontrado en esta [página](https://stackoverflow.com/questions/31827366/how-to-make-group-box-text-alignment-center-in-win-forms).
  
- ![pro8](https://user-images.githubusercontent.com/62104463/81250214-022d6180-8fe6-11ea-9b79-2fc969207131.png)
+ ![Ima8](https://user-images.githubusercontent.com/62104463/81250214-022d6180-8fe6-11ea-9b79-2fc969207131.png)
  
  Tercero, cada uno de los button que aparecen en el diseño tienen una configuración diferente. Por ejemplo, el button llamado ***`Agregar`***, permite que al ingresar todos los datos correspondientes se guarden pero si no se ha llenado ningún dato deberá mostrar un mensaje que diga ***`Por favor, llene todos los campos`***.
  
- ![pro9](https://user-images.githubusercontent.com/62104463/81250944-cd220e80-8fe7-11ea-819f-c93c1a7cb6d1.PNG)
+ ![Ima9](https://user-images.githubusercontent.com/62104463/81250944-cd220e80-8fe7-11ea-819f-c93c1a7cb6d1.PNG)
  
  Para lograr esto, usamos el siguiente código.
  ```
@@ -69,7 +69,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
  ```
  En caso de que queramos cambiar el color al diseño principal, damos clic en el button ***`Color`***, este nos mostrará una paleta de colores, donde podremos escoger el color que deseemos.
  
-![pro10_opt](https://user-images.githubusercontent.com/62104463/81253536-67855080-8fee-11ea-9a03-cd146c2ffd9e.png) ![pro11_opt](https://user-images.githubusercontent.com/62104463/81253674-b337fa00-8fee-11ea-87bd-62aea37e9982.png)
+![Ima10](https://user-images.githubusercontent.com/62104463/81253536-67855080-8fee-11ea-9a03-cd146c2ffd9e.png) ![Ima11](https://user-images.githubusercontent.com/62104463/81253674-b337fa00-8fee-11ea-87bd-62aea37e9982.png)
 
  ```
  if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -89,7 +89,7 @@ Un ejemplo es el siguiente:
      cs_Validaciones.SoloNumeros(e);
   }
   ```
-  ![pro12](https://user-images.githubusercontent.com/62104463/81254688-71f51980-8ff1-11ea-9684-b12e7193e87d.PNG)
+  ![Ima12](https://user-images.githubusercontent.com/62104463/81254688-71f51980-8ff1-11ea-9684-b12e7193e87d.PNG)
   
  2. Si queremos que el texto digitado se convirtiera todo en mayúscula, usamos:
  
@@ -99,7 +99,7 @@ Un ejemplo es el siguiente:
      TB_GeneroSerie.Text = TB_GeneroSerie.Text.ToUpper();
   }
   ```
-  ![pro13](https://user-images.githubusercontent.com/62104463/81255070-58080680-8ff2-11ea-9bb3-7036b825a414.PNG)
+  ![Ima13](https://user-images.githubusercontent.com/62104463/81255070-58080680-8ff2-11ea-9bb3-7036b825a414.PNG)
   
  3. Si en el comboBox queremos que los datos ingresados se guarden y se muestren en una lista.
  
@@ -110,8 +110,8 @@ Un ejemplo es el siguiente:
   
  Continuando con las herramientas utilizadas, tenemos el *panel* que recibe todos los datos del *userControl*. Este userControl recibe los datos de un segundo formulario, nuestro primer formulario es donde ingresamos por primera vez los datos, en nuestro caso (**los datos de una serie**), y nuestro segundo formulario muestra los mismos datos ingresados pero con la opción de modificar algún dato que queramos y en este formulario también utilizamos una herramienta adicional que es un *checkBox*.
  
- ![pro14_opt (3)](https://user-images.githubusercontent.com/62104463/81256347-d7e3a000-8ff5-11ea-917e-f2adaab52e92.png)    ![pro15_opt (3)](https://user-images.githubusercontent.com/62104463/81256523-62c49a80-8ff6-11ea-918a-0019f0d19107.png)
- ![pro16_opt](https://user-images.githubusercontent.com/62104463/81256603-956e9300-8ff6-11ea-8565-80362ce57bf1.png)
+ ![Ima14](https://user-images.githubusercontent.com/62104463/81256347-d7e3a000-8ff5-11ea-917e-f2adaab52e92.png)    ![Ima15](https://user-images.githubusercontent.com/62104463/81256523-62c49a80-8ff6-11ea-918a-0019f0d19107.png)
+ ![Ima16](https://user-images.githubusercontent.com/62104463/81256603-956e9300-8ff6-11ea-8565-80362ce57bf1.png)
    ```
    Este parte de código es para agregar los datos al userControl.
    ```
@@ -144,7 +144,7 @@ Un ejemplo es el siguiente:
   while (acum > 10);
   return acum;
   ```
-  ![pro17_opt](https://user-images.githubusercontent.com/62104463/81365398-9ca4a800-90ad-11ea-8687-7fb3a1477b07.png)
+  ![Ima17](https://user-images.githubusercontent.com/62104463/81365398-9ca4a800-90ad-11ea-8687-7fb3a1477b07.png)
   
  Y en nuestra segunda DLL llamada *DLL_Graficador* permite graficar los datos (*Nombre de la serie* y *Número de temporadas*) en un **chart**. Al actualizar el alguno de los datos del segundo formulario que están en la gráfica, los datos en el *chart* también se modifican.
  ```
@@ -153,7 +153,7 @@ Un ejemplo es el siguiente:
  ```
  this.chart1.Series["Nombre de la serie"].Points.AddXY(nombreSerie,numTemporadas);
  ```
- ![pro18_opt (1)](https://user-images.githubusercontent.com/62104463/81365623-41bf8080-90ae-11ea-9b95-626dd4ac1db9.png)
+ ![Ima18](https://user-images.githubusercontent.com/62104463/81365623-41bf8080-90ae-11ea-9b95-626dd4ac1db9.png)
  
  Además, en nuestro software utilizamos la herencia en diferentes formularios.Como bien sabemos la herencia se identifica con **:**. Lo que hicimos fue crear varios formularios llamados *h_about*,*h_informacion*,*h_llenarDatos* y *h_formularioBase* (este será el que heredará todas sus características a los demás formularios).
  
@@ -175,16 +175,16 @@ Un ejemplo es el siguiente:
  
  El formulario *h_about*, tendrá una característica adicional, porque nos permitirá escribir algo en un textBox.
  
- ![pro22_opt](https://user-images.githubusercontent.com/62104463/81490397-a19d5f00-9247-11ea-84dc-100f5adc0033.png)  ![pro23](https://user-images.githubusercontent.com/62104463/81490355-0310fe00-9247-11ea-82c3-abd606674e0d.PNG)  
- ![pro24_opt (6)](https://user-images.githubusercontent.com/62104463/81490497-9696fe80-9248-11ea-99bb-1f78508dd997.png)  ![pro25_opt (9)](https://user-images.githubusercontent.com/62104463/81490593-d5798400-9249-11ea-9d1d-398e696e8f1a.png)
+ ![Ima22](https://user-images.githubusercontent.com/62104463/81490397-a19d5f00-9247-11ea-84dc-100f5adc0033.png)  ![Ima23](https://user-images.githubusercontent.com/62104463/81490355-0310fe00-9247-11ea-82c3-abd606674e0d.PNG)  
+ ![Ima24](https://user-images.githubusercontent.com/62104463/81490497-9696fe80-9248-11ea-99bb-1f78508dd997.png)  ![Ima25](https://user-images.githubusercontent.com/62104463/81490593-d5798400-9249-11ea-9d1d-398e696e8f1a.png)
   
  Y para tener acceso directo a estos formularios desde el diseño principal, en nuestro diseño principal agregamos unos button correspondiente a los formularios.
  
- ![pro26](https://user-images.githubusercontent.com/62104463/81490627-46b93700-924a-11ea-8f9e-0d6d9e7d7c5f.PNG)
+ ![Ima26](https://user-images.githubusercontent.com/62104463/81490627-46b93700-924a-11ea-8f9e-0d6d9e7d7c5f.PNG)
  
  Finalmente, nuestro diseño principal tiene la opción de cambiar de idioma cada uno de los label, textBox, button y message. Los idiomas determinados son *español*, *inglés* y *francés*.
  
- ![pro19_opt](https://user-images.githubusercontent.com/62104463/81369177-61a77200-90b7-11ea-9f29-73eb6ed50331.png)  ![pro20_opt](https://user-images.githubusercontent.com/62104463/81369246-88fe3f00-90b7-11ea-91ba-259588cc8680.png)  ![pro21_opt](https://user-images.githubusercontent.com/62104463/81369318-b6e38380-90b7-11ea-9929-db70ce600871.png)
+ ![Ima19](https://user-images.githubusercontent.com/62104463/81369177-61a77200-90b7-11ea-9f29-73eb6ed50331.png)  ![Ima20](https://user-images.githubusercontent.com/62104463/81369246-88fe3f00-90b7-11ea-91ba-259588cc8680.png)  ![Ima21](https://user-images.githubusercontent.com/62104463/81369318-b6e38380-90b7-11ea-9929-db70ce600871.png)
 
 ```
 NOTA: 
