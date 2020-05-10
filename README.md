@@ -6,16 +6,16 @@
 
 ###### PROYECTO DE PROGRAMACIÓN SEGUNDO CORTE
 
-##### Contenido
+#### Contenido
 1. [Lenguaje utilizado.](#lenguaje-utilizado)
 2. [¿Cómo instalar el programa?](#cómo-instalar-el-programa)
 3. [Herramientas utilizadas.](#herramientas-utilizadas)
 4. [Video ilustrativo.](#video)
 
-##### Lenguaje utilizado.
+#### Lenguaje utilizado.
 Este proyecto está desarrollado en lenguaje C# en Visual Studio 2019.
 
-##### ¿Cómo instalar el programa?
+#### ¿Cómo instalar el programa?
 
 Para la instalación del software se deben seguir los siguientes pasos.
 
@@ -40,7 +40,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
    ```
    [![Instalar](https://img.youtube.com/vi/3I9m5sT4Q6Y/0.jpg)](https://youtu.be/3I9m5sT4Q6Y)
    
-##### Herramientas utilizadas.
+#### Herramientas utilizadas.
  Las herramientas que se utilizaron en el proyecto se explicarán acontinuación:
 
  En la parte del diseño principal utilizamos herramientas como label, textBox, comboBox, button, panel y colorDialog. Estás, a su vez cumplian con algunos requisitos pedidos para una mejor visualización del programa.
@@ -80,7 +80,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
  
 Por otra parte, algunos textBox y el comboBox, tienen una condición especial:
 
-1. Para los textBox que reciben datos numéricos, estos solo podran ser de tipo int, si llegado el caso se ingresado algún dato tipo string, saldrá el siguiente mensaje ***`Sólo se permiten números`***. Esto lo hicimos con ayuda del evento *KeyPress* y dentro de él llamamos a una clase que realizamos, la cual nos permitía hacer las validaciones de si era un dígito.  
+1. Para los textBox que reciben datos numéricos, estos solo podran ser de tipo int, si llegado el caso se ingresa algún dato tipo string, saldrá el siguiente mensaje ***`Sólo se permiten números`***. Esto lo hicimos con ayuda del evento *KeyPress* y dentro de él llamamos a una clase que realizamos, la cual nos permitía hacer las validaciones de si era un dígito.  
 Un ejemplo es el siguiente:
 
   ```
@@ -91,7 +91,7 @@ Un ejemplo es el siguiente:
   ```
   ![pro12](https://user-images.githubusercontent.com/62104463/81254688-71f51980-8ff1-11ea-9684-b12e7193e87d.PNG)
   
- 2. Si queríamos que el texto digitado se convirtiera todo en mayúscula, usamos:
+ 2. Si queremos que el texto digitado se convirtiera todo en mayúscula, usamos:
  
   ```
   private void TB_GeneroSerie_Leave(object sender, EventArgs e)
@@ -155,7 +155,32 @@ Un ejemplo es el siguiente:
  ```
  ![pro18_opt (1)](https://user-images.githubusercontent.com/62104463/81365623-41bf8080-90ae-11ea-9b95-626dd4ac1db9.png)
  
- Herencia
+ Además, en nuestro software utilizamos la herencia en diferentes formularios.Como bien sabemos la herencia se identifica con **:**. Lo que hicimos fue crear varios formularios llamados *h_about*,*h_informacion*,*h_llenarDatos* y *h_formularioBase* (este será el que heredará todas sus características a los demás formularios).
+ 
+ En el formulario *h_formularioBase*, escribimos este código:
+ 
+ ```
+ DialogResult RTA = MessageBox.Show(Res.mjs_Information, Res.mjs_Advertencia, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+ if (RTA == DialogResult.Yes)
+ {
+ h_about F = new h_about();
+ F.Show();
+ }
+ ```
+ Este código, si lo queremos tener en los otros formularios, ya no será necesario copiarlo en cada uno de ellos porque al momento de hacer ***herencia***, todos los formularios a los que el *h_formularioBase* haya hecho herencia, tendrán las características de ese formulario.
+ 
+ ```
+ h_llenardatos : h_formularioBase   //  h_informacion : h_formularioBase
+ ```
+ 
+ El formulario *h_about*, tendrá una característica adicional, porque nos permitirá escribir algo en un textBox.
+ 
+ ![pro22_opt](https://user-images.githubusercontent.com/62104463/81490397-a19d5f00-9247-11ea-84dc-100f5adc0033.png)  ![pro23](https://user-images.githubusercontent.com/62104463/81490355-0310fe00-9247-11ea-82c3-abd606674e0d.PNG)  
+ ![pro24_opt (6)](https://user-images.githubusercontent.com/62104463/81490497-9696fe80-9248-11ea-99bb-1f78508dd997.png)  ![pro25_opt (9)](https://user-images.githubusercontent.com/62104463/81490593-d5798400-9249-11ea-9d1d-398e696e8f1a.png)
+  
+ Y para tener acceso directo a estos formularios desde el diseño principal, en nuestro diseño principal agregamos unos button correspondiente a los formularios.
+ 
+ ![pro26](https://user-images.githubusercontent.com/62104463/81490627-46b93700-924a-11ea-8f9e-0d6d9e7d7c5f.PNG)
  
  Finalmente, nuestro diseño principal tiene la opción de cambiar de idioma cada uno de los label, textBox, button y message. Los idiomas determinados son *español*, *inglés* y *francés*.
  
@@ -188,4 +213,4 @@ Renombrar("es-CO");
 }
 ```
 
-##### Video.
+#### Video.
