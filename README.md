@@ -170,7 +170,7 @@ Un ejemplo es el siguiente:
  Este código, si lo queremos tener en los otros formularios, ya no será necesario copiarlo en cada uno de ellos porque al momento de hacer ***herencia***, todos los formularios a los que el *h_formularioBase* haya hecho herencia, tendrán las características de ese formulario.
  
  ```
- h_llenardatos : h_formularioBase   //  h_informacion : h_formularioBase
+ h_llenardatos : h_formularioBase   //  h_informacion : h_formularioBase  //  h_about
  ```
  
  El formulario *h_about*, tendrá una característica adicional, porque nos permitirá escribir algo en un textBox.
