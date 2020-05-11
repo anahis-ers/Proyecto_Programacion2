@@ -72,10 +72,9 @@ Para la instalación del software se deben seguir los siguientes pasos.
 ![Ima10](https://user-images.githubusercontent.com/62104463/81253536-67855080-8fee-11ea-9a03-cd146c2ffd9e.png) ![Ima11](https://user-images.githubusercontent.com/62104463/81253674-b337fa00-8fee-11ea-87bd-62aea37e9982.png)
 
  ```
- if (colorDialog1.ShowDialog() == DialogResult.OK)
- {
-     base.BackColor = colorDialog1.Color;
- }
+ ColorDialog color = new ColorDialog();
+ color.ShowDialog();
+ this.BackColor = color.Color;
  ```
  
 Por otra parte, algunos textBox y el comboBox, tienen una condición especial:
@@ -116,7 +115,7 @@ Un ejemplo es el siguiente:
    Este parte de código es para agregar los datos al userControl.
    ```
    ```
-   UserControl1 miUC = new UserControl1(TB_NombreSerie.Text, misRegistros, contador);
+   UserControl1 miUC = new UserControl1(TB_NombreSerie.Text, misRegistros, contador,this);
    panel1.Controls.Add(miUC);
    miUC.Location = new System.Drawing.Point(9, valor);
    valor = valor + miUC.Size.Height;
@@ -163,14 +162,14 @@ Un ejemplo es el siguiente:
  DialogResult RTA = MessageBox.Show(Res.mjs_Information, Res.mjs_Advertencia, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
  if (RTA == DialogResult.Yes)
  {
- h_about F = new h_about();
+ h_about F = new h_about(base.BackColor);
  F.Show();
  }
  ```
  Este código, si lo queremos tener en los otros formularios, ya no será necesario copiarlo en cada uno de ellos porque al momento de hacer ***herencia***, todos los formularios a los que el *h_formularioBase* haya hecho herencia, tendrán las características de ese formulario.
  
  ```
- h_llenardatos : h_formularioBase   //  h_informacion : h_formularioBase  //  h_about
+ h_llenardatos : h_formularioBase   //  h_informacion : h_formularioBase  //  h_about : h_formularioBase
  ```
  
  El formulario *h_about*, tendrá una característica adicional, porque nos permitirá escribir algo en un textBox.
