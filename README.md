@@ -110,7 +110,8 @@ Un ejemplo es el siguiente:
  Continuando con las herramientas utilizadas, tenemos el *panel* que recibe todos los datos del *userControl*. Este userControl recibe los datos de un segundo formulario, nuestro primer formulario es donde ingresamos por primera vez los datos, en nuestro caso (**los datos de una serie**), y nuestro segundo formulario muestra los mismos datos ingresados pero con la opción de modificar algún dato que queramos y en este formulario también utilizamos una herramienta adicional que es un *checkBox*.
  
  ![Ima14](https://user-images.githubusercontent.com/62104463/81256347-d7e3a000-8ff5-11ea-917e-f2adaab52e92.png)    ![Ima15](https://user-images.githubusercontent.com/62104463/81256523-62c49a80-8ff6-11ea-918a-0019f0d19107.png)
- ![Ima16](https://user-images.githubusercontent.com/62104463/81256603-956e9300-8ff6-11ea-8565-80362ce57bf1.png)
+ ![pro27_opt (5)](https://user-images.githubusercontent.com/62104463/81627179-3c6e7880-93c3-11ea-9859-67305849e9fb.png)
+
    ```
    Este parte de código es para agregar los datos al userControl.
    ```
@@ -152,7 +153,7 @@ Un ejemplo es el siguiente:
  ```
  this.chart1.Series["Nombre de la serie"].Points.AddXY(nombreSerie,numTemporadas);
  ```
- ![Ima18](https://user-images.githubusercontent.com/62104463/81365623-41bf8080-90ae-11ea-9b95-626dd4ac1db9.png)
+ ![pro28_opt](https://user-images.githubusercontent.com/62104463/81627507-f665e480-93c3-11ea-8ad5-add51a2d8da9.png)
  
  Además, en nuestro software utilizamos la herencia en diferentes formularios.Como bien sabemos la herencia se identifica con **:**. Lo que hicimos fue crear varios formularios llamados *h_about*,*h_informacion*,*h_llenarDatos* y *h_formularioBase* (este será el que heredará todas sus características a los demás formularios).
  
@@ -179,11 +180,12 @@ Un ejemplo es el siguiente:
   
  Y para tener acceso directo a estos formularios desde el diseño principal, en nuestro diseño principal agregamos unos button correspondiente a los formularios.
  
- ![Ima26](https://user-images.githubusercontent.com/62104463/81490627-46b93700-924a-11ea-8f9e-0d6d9e7d7c5f.PNG)
+ ![pro32_opt](https://user-images.githubusercontent.com/62104463/81628047-38dbf100-93c5-11ea-8547-963e1b0abe3e.png)
  
  Finalmente, nuestro diseño principal tiene la opción de cambiar de idioma cada uno de los label, textBox, button y message. Los idiomas determinados son *español*, *inglés* y *francés*.
  
- ![Ima19](https://user-images.githubusercontent.com/62104463/81369177-61a77200-90b7-11ea-9f29-73eb6ed50331.png)  ![Ima20](https://user-images.githubusercontent.com/62104463/81369246-88fe3f00-90b7-11ea-91ba-259588cc8680.png)  ![Ima21](https://user-images.githubusercontent.com/62104463/81369318-b6e38380-90b7-11ea-9929-db70ce600871.png)
+ ![pro33_opt](https://user-images.githubusercontent.com/62104463/81628489-69705a80-93c6-11ea-8d86-f553fb2c85ad.png)  ![pro34_opt](https://user-images.githubusercontent.com/62104463/81628521-8147de80-93c6-11ea-9f77-4a3cd7bdbdff.png)
+  ![pro35_opt](https://user-images.githubusercontent.com/62104463/81628568-9de41680-93c6-11ea-8a77-d979608a0a50.png)
 
 ```
 NOTA: 
