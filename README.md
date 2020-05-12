@@ -217,4 +217,4 @@ Renombrar("es-CO");
 
 #### Video.
 
-[![VideoFuncionalidad](https://gifs.com/gif/funcionalidad-jZ9mmY)(https://www.youtube.com/watch?v=hcsmGwW2GPs)
+[![VideoFuncionalidad](https://gifs.com/gif/funcionalidad-jZ9mmY)](https://www.youtube.com/watch?v=hcsmGwW2GPs)
