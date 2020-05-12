@@ -38,7 +38,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
    ```
    Aquí una explicación detallada: https://youtu.be/3I9m5sT4Q6Y
    ```
-   [![VideoInstalar](https://img.youtube.com/vi/3I9m5sT4Q6Y/0.jpg)](https://youtu.be/3I9m5sT4Q6Y)
+   [![VideoInstalar](https://j.gifs.com/YW9AAO.gif)](https://youtu.be/3I9m5sT4Q6Y)
    
 #### Herramientas utilizadas.
  Las herramientas que se utilizaron en el proyecto se explicarán acontinuación:
@@ -217,4 +217,7 @@ Renombrar("es-CO");
 
 #### Video.
 
+```
+   Demostración del software: https://www.youtube.com/watch?v=hcsmGwW2GPs
+```
 [![VideoFuncionalidad](https://j.gifs.com/jZ9mmY.gif)](https://www.youtube.com/watch?v=hcsmGwW2GPs)
