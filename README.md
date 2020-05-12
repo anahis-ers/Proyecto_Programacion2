@@ -176,7 +176,7 @@ Un ejemplo es el siguiente:
  El formulario *h_about*, tendrá una característica adicional, porque nos permitirá escribir algo en un textBox.
  
  ![pro36_opt](https://user-images.githubusercontent.com/62104463/81629497-e3a1de80-93c8-11ea-9be0-3db5b6b3e10c.png)   ![pro37_opt (1)](https://user-images.githubusercontent.com/62104463/81629704-6034bd00-93c9-11ea-9416-9008b5a7d456.png)  
- ![pro38_opt (1)](https://user-images.githubusercontent.com/62104463/81629842-c02b6380-93c9-11ea-9690-7c1e519a22ee.png)   ![pro39_opt (2)](https://user-images.githubusercontent.com/62104463/81630044-362fca80-93ca-11ea-8b87-9dd010f0d14f.png)
+ ![pro38_opt (1)](https://user-images.githubusercontent.com/62104463/81629842-c02b6380-93c9-11ea-9690-7c1e519a22ee.png)   ![pro39_opt (3)](https://user-images.githubusercontent.com/62104463/81630100-5bbcd400-93ca-11ea-9e6a-58df0bc2b904.png)
 
   
  Y para tener acceso directo a estos formularios desde el diseño principal, en nuestro diseño principal agregamos unos button correspondiente a los formularios.
