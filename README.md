@@ -1,12 +1,12 @@
-# Proyecto-Programacion-2
 ###### UNIVERSIDAD DE INVESTIGACION Y DESARROLLO - UDI
-###### NOMBRES: Laura Daniela Pinzón Lizarazo y Anahis Enith Rodríguez Suescún
-###### DOCENTE:
+###### AUTORES: Laura Daniela Pinzón Lizarazo y Anahis Enith Rodríguez Suescún
+###### DOCENTE: Michael Sneider Puentes Palacio
 ###### GRUPO: 4L  
 
 ###### PROYECTO DE PROGRAMACIÓN SEGUNDO CORTE
 
 #### Contenido
+
 1. [Lenguaje utilizado.](#lenguaje-utilizado)
 2. [¿Cómo instalar el programa?](#cómo-instalar-el-programa)
 3. [Herramientas utilizadas.](#herramientas-utilizadas)
@@ -25,7 +25,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
  
 2. Damos clic en ***`Clone or download`*** y seleccionamos la opción ***`Download ZIP`*** para poder descargar el software.
 
-   ![Ima2](https://user-images.githubusercontent.com/62104463/81244963-5ed64f80-8fd9-11ea-92ba-527fb403e604.png)  ![Imag3](https://user-images.githubusercontent.com/62104463/81245501-c50fa200-8fda-11ea-8326-578b82172c6b.png)
+   ![Ima2](https://user-images.githubusercontent.com/62104463/81244963-5ed64f80-8fd9-11ea-92ba-527fb403e604.png)  ![Ima3](https://user-images.githubusercontent.com/62104463/81245501-c50fa200-8fda-11ea-8326-578b82172c6b.png)
 
 3. Al descargarlo, nos dirigimos al lugar donde quedó descargado el software y descomprimimos el archivo. Al tener ya descomprimido el archivo, abrimos la carpeta y descomprimimos también los dos archivos que aparecen comprimidos.
 
@@ -41,7 +41,7 @@ Para la instalación del software se deben seguir los siguientes pasos.
    [![VideoInstalar](https://j.gifs.com/YW9AAO.gif)](https://youtu.be/3I9m5sT4Q6Y)
    
 #### Herramientas utilizadas.
- Las herramientas que se utilizaron en el proyecto se explicarán acontinuación:
+ Las herramientas utilizadas en el proyecto se explicarán acontinuación:
 
  En la parte del diseño principal utilizamos herramientas como label, textBox, comboBox, button, panel y colorDialog. Estás, a su vez cumplian con algunos requisitos pedidos para una mejor visualización del programa.
  
@@ -79,7 +79,8 @@ Para la instalación del software se deben seguir los siguientes pasos.
  
 Por otra parte, algunos textBox y el comboBox, tienen una condición especial:
 
-1. Para los textBox que reciben datos numéricos, estos solo podran ser de tipo int, si llegado el caso se ingresa algún dato tipo string, saldrá el siguiente mensaje ***`Sólo se permiten números`***. Esto lo hicimos con ayuda del evento *KeyPress* y dentro de él llamamos a una clase que realizamos, la cual nos permitía hacer las validaciones de si era un dígito.  
+1. Para los textBox que reciben datos numéricos, estos solo podran ser de tipo int, si llegado el caso se ingresa algún dato tipo string, saldrá el siguiente mensaje ***`Sólo se permiten números`***. Esto lo hicimos con ayuda del evento *KeyPress* y dentro de él llamamos a una clase que realizamos, la cual nos permitía hacer las validaciones de si era un dígito. 
+
 Un ejemplo es el siguiente:
 
   ```
@@ -90,7 +91,7 @@ Un ejemplo es el siguiente:
   ```
   ![Ima12](https://user-images.githubusercontent.com/62104463/81254688-71f51980-8ff1-11ea-9684-b12e7193e87d.PNG)
   
- 2. Si queremos que el texto digitado se convirtiera todo en mayúscula, usamos:
+ 2. Si queremos que el texto digitado se convierta todo en mayúscula, usamos:
  
   ```
   private void TB_GeneroSerie_Leave(object sender, EventArgs e)
@@ -100,7 +101,7 @@ Un ejemplo es el siguiente:
   ```
   ![Ima13](https://user-images.githubusercontent.com/62104463/81255070-58080680-8ff2-11ea-9bb3-7036b825a414.PNG)
   
- 3. Si en el comboBox queremos que los datos ingresados se guarden y se muestren en una lista.
+ 3. Y si en el comboBox queremos que los datos ingresados se guarden y se muestren en una lista.
  
   ```
   comboBox1.Items.Add(comboBox1.Text);
@@ -123,9 +124,9 @@ Un ejemplo es el siguiente:
    TodoUC.Add(miUC);
    ```
    
- Otras de las herramientas se encuentran en nuestras DLL.
+ Otras de las herramientas utilizadas se encuentran en nuestras DLL.
  
- En nuestra primera DLL llamada *DLL_Numero* la utilizamos para calcular la raiz de un número. Al ingresar número de varios dígitos, se suman cada uno de los dígitos hasta que quede solo un dígito.
+ En nuestra primera DLL llamada *DLL_Numero* la utilizamos para calcular la raiz de un número. Al ingresar un número de varios dígitos, se suman cada uno de los dígitos hasta que quede solo un dígito.
  
   ```
   int nume = int.Parse(numero);
@@ -146,7 +147,7 @@ Un ejemplo es el siguiente:
   ```
   ![Ima17](https://user-images.githubusercontent.com/62104463/81365398-9ca4a800-90ad-11ea-8687-7fb3a1477b07.png)
   
- Y en nuestra segunda DLL llamada *DLL_Graficador* permite graficar los datos (*Nombre de la serie* y *Número de temporadas*) en un **chart**. Al actualizar el alguno de los datos del segundo formulario que están en la gráfica, los datos en el *chart* también se modifican.
+ Y en nuestra segunda DLL llamada *DLL_Graficador* permite graficar los datos (*Nombre de la serie* y *Número de temporadas*) en un **chart**. Al actualizar alguno de los datos del segundo formulario que están en la gráfica, los datos en el *chart* también se modifican.
  ```
  Agregar datos al chart
  ```
@@ -155,7 +156,7 @@ Un ejemplo es el siguiente:
  ```
  ![pro28_opt](https://user-images.githubusercontent.com/62104463/81627507-f665e480-93c3-11ea-8ad5-add51a2d8da9.png)
  
- Además, en nuestro software utilizamos la herencia en diferentes formularios.Como bien sabemos la herencia se identifica con **:**. Lo que hicimos fue crear varios formularios llamados *h_about*,*h_informacion*,*h_llenarDatos* y *h_formularioBase* (este será el que heredará todas sus características a los demás formularios).
+ Además, en nuestro software utilizamos la herencia en diferentes formularios.Como bien sabemos la herencia se identifica con **:** . Lo que hicimos fue crear varios formularios llamados *h_about*,*h_informacion*,*h_llenarDatos* y *h_formularioBase* (este será el que heredará todas sus características a los demás formularios).
  
  En el formulario *h_formularioBase*, escribimos este código:
  
@@ -183,7 +184,7 @@ Un ejemplo es el siguiente:
  
  ![pro32_opt](https://user-images.githubusercontent.com/62104463/81628047-38dbf100-93c5-11ea-8547-963e1b0abe3e.png)
  
- Finalmente, nuestro diseño principal tiene la opción de cambiar de idioma cada uno de los label, textBox, button y message. Los idiomas determinados son *español*, *inglés* y *francés*.
+ Finalmente, nuestro diseño principal tiene la opción de cambiar de idioma cada uno de los label, textBox, button y message. Los idiomas escogidos fueron *español*, *inglés* y *francés*.
  
  ![pro33_opt](https://user-images.githubusercontent.com/62104463/81628489-69705a80-93c6-11ea-8d86-f553fb2c85ad.png)  ![pro34_opt](https://user-images.githubusercontent.com/62104463/81628521-8147de80-93c6-11ea-9f77-4a3cd7bdbdff.png)
   ![pro35_opt](https://user-images.githubusercontent.com/62104463/81628568-9de41680-93c6-11ea-8a77-d979608a0a50.png)
